@@ -1,0 +1,55 @@
+/* About.css */
+:root{
+  --bg1: #7c3aed; /* purple */
+  --bg2: #2563eb; /* blue */
+  --bg3: #ec4899; /* pink */
+  --frame1: #ffdf5d; /* yellow */
+  --frame2: #ff6bcb; /* pink */
+  --frame3: #8b5cf6; /* indigo */
+}
+
+.About-section{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--bg1), var(--bg2), var(--bg3));
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.outer-frame{
+  padding: 4px; /* thickness of the colorful border */
+  border-radius: 24px;
+  background: linear-gradient(90deg, var(--frame1), var(--frame2), var(--frame3));
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.inner-panel{
+  background: rgba(0,0,0,0.5); /* semi-transparent dark panel */
+  backdrop-filter: blur(6px);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 720px;
+  width: 100%;
+}
+
+.inner-panel h2{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #fff8c6;
+}
+
+.inner-panel p{
+  line-height: 1.6;
+  margin: 0.6rem 0;
+  color: #ffffffdd;
+}
+
+/* small hover scale */
+.outer-frame:hover .inner-panel{
+  transform: scale(1.02);
+  transition: transform 250ms ease;
+}
